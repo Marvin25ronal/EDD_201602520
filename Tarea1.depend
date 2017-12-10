@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1512803300 source:/home/marvin/Escritorio/EDD/Tarea1/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Cabecera.h"
+
+1512800747 /home/marvin/Escritorio/EDD/Tarea1/Cabecera.h
+
