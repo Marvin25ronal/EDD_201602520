@@ -28,13 +28,17 @@ SOURCES += \
         mainwindow.cpp \
     avion.cpp \
     imagen.cpp \
-    pasajeros.cpp
+    pasajeros.cpp \
+    control.cpp \
+    escritorios.cpp
 
 HEADERS += \
         mainwindow.h \
     avion.h \
     imagen.h \
-    pasajeros.h
+    pasajeros.h \
+    control.h \
+    escritorios.h
 
 FORMS += \
         mainwindow.ui

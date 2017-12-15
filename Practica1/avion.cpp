@@ -54,7 +54,7 @@ setAviones(getAviones()-1);
 
 }
 bool Lista:: VerificarDatos(){
-    if(getAviones()>0&&getTiempos()>0){
+    if(getAviones()>0&&getTiempos()>0&&getEscritorios()>0){
         return true;
     }else {
         return false;
@@ -62,19 +62,20 @@ bool Lista:: VerificarDatos(){
 }
 string Lista::CodigoAvion(){
 
-    string Codigo="";
-    Avion *aux=new Avion();
-    aux=Ultimo;
-    if(ListaVacia()==false){
+    string Codigo=" \n  \n subgraph  cluster0{ \n";
+    Avion *aux;
+
+    if(Ultimo!=NULL&&Primero!=NULL){
+          aux=Ultimo;
         if(aux->AvionSiguiente==NULL){
-            Codigo =Codigo+ "Avion_"+to_string(aux->id)+";";
+            Codigo =Codigo+ "Avion_"+to_string(aux->id)+"; \n";
         }
         while(aux->AvionSiguiente!=NULL){
             Codigo=Codigo+"Avion_"+to_string(aux->id)+"->Avion_"+to_string(aux->AvionSiguiente->id)+"; \n";
             Codigo=Codigo+"Avion_"+to_string(aux->AvionSiguiente->id)+"->Avion_"+to_string(aux->id)+"; \n ";
            aux= aux->AvionSiguiente;
         }
-        Codigo=Codigo+"label=\"Aviones\" \n";
+        Codigo=Codigo+"label=\"Aviones\" ;  \n";
 
     }
 
@@ -83,50 +84,43 @@ string Lista::CodigoAvion(){
 }
 bool Lista::ListaVacia()
 {
-    if(Primero!=NULL){
+    if(Primero!=NULL&&Ultimo!=NULL){
         return false;
     }else{
         return true;
     }
 }
-void Lista::VerificarTurnosAvion(){
+bool Lista::VerificarTurnosAvion(){
+    bool EstaDesavordandoAvion=false;
     if(Primero!=NULL){
         if(Primero->Turnos>0){
             Primero->Turnos=Primero->Turnos-1;
         }else{
-            int contador=0;
-            if(Primero->AvionAnterior!=NULL){
-                Avion *aux=new Avion();
-                aux=Primero;
-                //Saca al avion y baja personas
-                contador=aux->Pasajeros;
-                while(contador>0){
-                    p.InsertarPasajero(cantidadpasajeros);
-                    contador--;
-                    cantidadpasajeros++;
-                }
+
+                EstaDesavordandoAvion=true;
+        }
+    }
+    return EstaDesavordandoAvion;
+}
+void Lista::Eliminar()
+{
+    Avion *Aux;
+    Aux=Primero;
+    if(Primero!=NULL){
+        if(Primero->AvionAnterior!=NULL){
+            Aux=Primero;
+            Primero=Aux->AvionAnterior;
+                Primero->AvionSiguiente=NULL;
 
 
-                //Saca al avion 2  lo hace cabeza
-                aux=Primero->AvionAnterior;
-                Primero->AvionAnterior=NULL;
-                aux->AvionSiguiente=NULL;
-                Primero=aux;
-                Primero->Turnos=Primero->Turnos-1;
+           delete Aux;
+        }else {
+            Primero=NULL;
+             Ultimo=NULL;
 
-            }else{
-                //Enviar a primero a la otra
-                contador=Primero->Pasajeros;
-                while(contador>0){
-                    p.InsertarPasajero(cantidadpasajeros);
-                    contador--;
-                    cantidadpasajeros++;
-                }
-                Primero=NULL;
-                free(Primero);
-            }
-            //Se manda a mantenimiento luego de tronar
+            delete Aux;
 
         }
+
     }
 }
