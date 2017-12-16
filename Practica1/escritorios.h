@@ -24,7 +24,7 @@ typedef struct PilaDocumentos{
     Documentos *Cabeza;
     void Push(int id);
     int PopID();
-    void VaciarPila();
+      void VaciarPila();
 }PilaDocumentos;
 
 typedef struct ColaPersona{

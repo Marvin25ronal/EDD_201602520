@@ -1,5 +1,6 @@
 #include "escritorios.h"
 #include <pasajeros.h>
+ int idDoc=1;
 
 void ListaEscritorios::insertarEscritorio(){
     char a='A';
@@ -60,11 +61,13 @@ ListaPasajeros *h=Ref;
             if(auxEscritorio->ColaPersonas->getNumeroEnTaquilla()>=0){
 
                 while(auxEscritorio->ColaPersonas->getNumeroEnTaquilla()<10&&h->Primero!=NULL){
+
                    Persona *auxiliarPersona=new Persona();
-                   auxiliarPersona->PasajeroAnterior=NULL;
+
                    auxiliarPersona->id=h->Primero->id;
 
                    auxiliarPersona->documentos=h->Primero->Documentos;
+                   cout<<auxiliarPersona->documentos<<endl;
                    auxiliarPersona->maletas=h->Primero->MaletasCantidad;
                    auxiliarPersona->tiemposentaquilla=h->Primero->TurnosRegistro;
 
@@ -82,6 +85,7 @@ ListaPasajeros *h=Ref;
 
         }
      auxEscritorio=auxEscritorio->EscritorioSigueinte;
+
     }
 
 
@@ -103,6 +107,8 @@ string ListaEscritorios::CodigoEscritorios(){
     string codigo;
     codigo="subgraph  cluster3{ \n  " ;
     Escritorio *aux;
+
+
     aux=Primero;
 
     codigo=codigo+"{rank=same; \n";
@@ -116,32 +122,39 @@ string ListaEscritorios::CodigoEscritorios(){
 
     aux=Primero;
     Persona *auxper;
+    codigo+="node[shape=record]; \n";
     while(aux!=NULL&&aux->ColaPersonas->PasajeroAtendido!=NULL){
+
         auxper=aux->ColaPersonas->PasajeroAtendido;
-        codigo=codigo+aux->Letra+"->Pasajero"+to_string(auxper->id)+";\n";
-        while(auxper->PasajeroAnterior!=NULL){
-            codigo=codigo+"Pasajero"+to_string(auxper->id)+"->Pasajero"+to_string(auxper->PasajeroAnterior->id)+"; \n";
+        codigo=codigo+aux->Letra+"->Persona"+to_string(auxper->id)+";\n";
+        while(auxper!=NULL){
+
+            codigo+="Persona"+to_string(auxper->id)+"[label=\"{ ID: "+to_string(auxper->id)+" |Maletas: "+to_string(auxper->maletas)+"| Documentos: "+to_string(auxper->documentos)+" |Turnos:  "+to_string(auxper->tiemposentaquilla)+" <ref>}\"]; \n";
+
             auxper=auxper->PasajeroAnterior;
         }
+
         aux=aux->EscritorioSigueinte;
     }
-    Documentos *auxDoc;
     aux=Primero;
+    while(aux!=NULL&&aux->ColaPersonas->PasajeroAtendido!=NULL){
 
-    while(aux!=NULL&&aux->PilaDoc->Cabeza!=NULL){
-        auxDoc=aux->PilaDoc->Cabeza;
+        auxper=aux->ColaPersonas->PasajeroAtendido;
 
-        while(auxDoc->documentoSiguiente!=NULL){
-            codigo=codigo+"Doc"+to_string(auxDoc->id)+"->Doc"+to_string(auxDoc->documentoSiguiente->id)+"; \n";
-            auxDoc=auxDoc->documentoSiguiente;
+        while(auxper->PasajeroAnterior!=NULL){
+
+           codigo+="Persona"+to_string(auxper->id)+"->Persona"+to_string(auxper->PasajeroAnterior->id)+"; \n";
+            auxper=auxper->PasajeroAnterior;
         }
-        codigo=codigo+"Doc"+to_string(auxDoc->id)+"->"+aux->Letra+";\n";
-           aux=aux->EscritorioSigueinte;
 
+        aux=aux->EscritorioSigueinte;
     }
+    codigo+="label=\"Escritorios\";  \n";
 
 
-    cout<<codigo<<endl;
+
+
+
     return codigo;
 }
 int PilaDocumentos::PopID(){
@@ -158,7 +171,7 @@ void ListaEscritorios::CrearPilaEscritorio(){
        Escritorio *aux;
        Persona *auxper;
       int contador=0;
-      int idDoc=1;
+
        aux=Primero;
 
        while(aux!=NULL){
@@ -182,7 +195,7 @@ void ListaEscritorios::CrearPilaEscritorio(){
 
 
 }
-void ListaEscritorios::SacarPersonas(ListaMochilas *meny){
+void ListaEscritorios::SacarPersonas(ListaMochilas *mo){
     Escritorio *aux;
     aux=Primero;
 
@@ -194,12 +207,25 @@ void ListaEscritorios::SacarPersonas(ListaMochilas *meny){
             if(auxper->tiemposentaquilla>0){
                 auxper->tiemposentaquilla=auxper->tiemposentaquilla-1;
             }else{
+            if(auxper->PasajeroAnterior!=NULL){
 
+                     EliminarMaleta(mo,auxper->maletas);
              auxper=aux->ColaPersonas->PasajeroAtendido;
              aux->ColaPersonas->PasajeroAtendido=auxper->PasajeroAnterior;
 
 
                   delete(auxper);
+                  //Aqui va crear
+
+
+
+            }else{
+                 EliminarMaleta(mo,auxper->maletas);
+
+
+                aux->ColaPersonas->PasajeroAtendido=NULL;
+                aux->ColaPersonas->UltimoPasajero=NULL;
+            }
             }
         }
         aux=aux->EscritorioSigueinte;
@@ -207,45 +233,44 @@ void ListaEscritorios::SacarPersonas(ListaMochilas *meny){
 
 }
 bool ListaEscritorios::EliminarMaleta(ListaMochilas *mo,int mochila){
- ListaMochilas *aux;
- aux=mo;
+    cout<<mochila<<endl;
+    if(mo->Primera!=NULL){
+        Mochilas *Corredor;
+        Corredor=mo->Primera;
+        int contador=mochila;
+        cout<<"Se van a eliminar"<<mochila<<endl;
+        while(contador>0){
 
-Mochilas *momo;
-momo=mo->Primera;
-Mochilas *Mochilaextra;
-Mochilaextra=NULL;
-bool encontrado=false;
-int nodoBuscado;
-nodoBuscado=mochila;
-if(aux->Primera!=NULL){
-    do{
-        if(momo->id==mochila){
-            if(aux->Primera==aux->Primera->MochilaSiguiente){
-                aux->Primera=aux->Primera->MochilaSiguiente;
-                aux->Primera->MochilaAnterior=aux->Ultima;
-                aux->Ultima->MochilaSiguiente=aux->Primera;
-            }else if(momo==aux->Ultima){
-aux->Ultima=Mochilaextra;
-aux->Ultima->MochilaSiguiente=aux->Primera;
-Mochilaextra->MochilaAnterior=aux->Ultima;
+           Mochilas *aux=Corredor;
+           if(Corredor!=mo->Primera){
+               aux->MochilaAnterior->MochilaSiguiente=aux->MochilaSiguiente;
+               aux->MochilaSiguiente->MochilaAnterior=aux->MochilaAnterior;
+               delete aux;
+           }
+           if(Corredor==mo->Primera){
+               if(mo->Primera->MochilaSiguiente!=mo->Ultima){
+                   mo->Ultima->MochilaSiguiente=aux->MochilaSiguiente;
+                   mo->Primera=aux->MochilaSiguiente;
+                   mo->Primera->MochilaAnterior=mo->Ultima;
+                   delete aux;
+               }else{
+                   mo->Ultima=NULL;
+                   mo->Primera=NULL;
+               }
 
-            }
+           }
 
-            encontrado=true;
+           Corredor=Corredor->MochilaSiguiente;
+contador=contador-1;
         }
-        Mochilaextra=momo;
-        momo=momo->MochilaSiguiente;
     }
-    while(momo!=aux->Primera&&encontrado!=true);
-    if(!encontrado){
-
-    }
-}else{
 
 }
 
 
 
 
-}
+
+
+
 

@@ -7,7 +7,7 @@
 
 using namespace std;
 
-string Imagen::GenerarCodigo (string CodigoA,string CodigoB,string CodigoC,string CodigoE){
+string Imagen::GenerarCodigo (string CodigoA,string CodigoB,string CodigoC,string CodigoE,string CodigoF,string CodigoG){
 
     string codigo="";
     codigo="digraph G { \n";
@@ -15,6 +15,8 @@ string Imagen::GenerarCodigo (string CodigoA,string CodigoB,string CodigoC,strin
     codigo=codigo+CodigoB+"\n }";
     codigo=codigo+CodigoC+" \n } ";
     codigo=codigo+CodigoE+"\n } ";
+    codigo+=CodigoG+" \n }";
+    codigo=codigo+CodigoF+"\n  }";
     codigo=codigo+"\n } \n ";
 
     GenerarImagen(codigo);    

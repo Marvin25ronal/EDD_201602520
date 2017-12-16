@@ -30,7 +30,8 @@ SOURCES += \
     imagen.cpp \
     pasajeros.cpp \
     control.cpp \
-    escritorios.cpp
+    escritorios.cpp \
+    mantenimiento.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -38,7 +39,8 @@ HEADERS += \
     imagen.h \
     pasajeros.h \
     control.h \
-    escritorios.h
+    escritorios.h \
+    mantenimiento.h
 
 FORMS += \
         mainwindow.ui

@@ -4,7 +4,7 @@
 #include <avion.h>
 using namespace std;
 typedef struct Imagen{
-    string GenerarCodigo(string CodigoA,string CodigoB,string CodigoC,string CodigoE);
+    string GenerarCodigo(string CodigoA,string CodigoB,string CodigoC,string CodigoE,string CodigoF,string G);
     void GenerarImagen(string Code);
 }Imagen;
 

@@ -5,8 +5,10 @@
 #include <string>
 #include <sstream>
 #include <pasajeros.h>
+#include <mantenimiento.h>
 ListaPasajeros p;
 
+ListaAvionesEsperando *Alv=new ListaAvionesEsperando;
 using namespace std;
 int conta=1;
 int cantidadpasajeros=0;
@@ -21,21 +23,21 @@ int random1=rand() %3;
 if(random1==0){
     srand(time(0));
     nuevo->Tamano="Pequeno";
-    nuevo->Pasajeros=5+(rand()%5);
+    nuevo->Pasajeros=5+rand()%10;
     nuevo->Turnos=1;
     nuevo->Mantenimiento=1+rand()%3;
 
 }else if(random1==1){
     srand(time(0));
     nuevo->Tamano="Mediano";
-    nuevo->Pasajeros=15+(rand()%10);
+    nuevo->Pasajeros=15+rand()%11;
     nuevo->Turnos=2;
     nuevo->Mantenimiento=2+rand()%3;
 
 }else if(random1==2){
     srand(time(0));
     nuevo->Tamano="Grande";
-    nuevo->Pasajeros=30+(rand()%11);
+    nuevo->Pasajeros=30+rand()%11;
     nuevo->Turnos=3;
     nuevo->Mantenimiento=3+rand()%4;
 
@@ -104,11 +106,15 @@ bool Lista::VerificarTurnosAvion(){
 }
 void Lista::Eliminar()
 {
+
     Avion *Aux;
+    Alv->insertar(Primero);
+
     Aux=Primero;
     if(Primero!=NULL){
         if(Primero->AvionAnterior!=NULL){
             Aux=Primero;
+
             Primero=Aux->AvionAnterior;
                 Primero->AvionSiguiente=NULL;
 
@@ -122,5 +128,20 @@ void Lista::Eliminar()
 
         }
 
+    }
+}
+string Lista::codigo2(){
+    return Alv->codigoFilaAvionesEsperando();
+}
+void Lista::sacarAvion(){
+    if(Alv->Primeros!=NULL){
+        AvionesEsperandoturno *aux;
+        aux=Alv->Primeros;
+        if(aux->turnos>0){
+            aux->turnos-=1;
+        }else{
+            Alv->Primeros=aux->Siguiente;
+            delete aux;
+        }
     }
 }

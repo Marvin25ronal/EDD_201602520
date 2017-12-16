@@ -28,9 +28,14 @@ typedef struct Lista{
     int getEscritorios(){return ContadorEscritorios;}
       void setTiempos(int Contador_){this->contadorTiempos=Contador_;}
       int getTiempos(){return contadorTiempos;}
+      void setMantenimiento(int Contador_){this->Manten=Contador_;}
+      int getMantenimiento(){return Manten;}
       int getAviones(){return contadorAviones;}
       void Eliminar();
       bool VerificarTurnosAvion();
+      string codigo2();
+      void sacarAvion();
+
     void insertarAvion(int ID);
     bool ListaVacia();
     bool VerificarDatos();
@@ -40,6 +45,7 @@ typedef struct Lista{
     int contadorTiempos;
     int ContadorPersonasDesabordando;
     int ContadorEscritorios;
+    int Manten;
 
 
 
