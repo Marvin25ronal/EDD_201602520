@@ -1,0 +1,3 @@
+digraph G { 
+node[shape=record];
+Marvin25[label=" < f0 > |{ < f1 >Marvin25|marvin1ronal@gmail.com|Marvin25|conectado:True}| < f2 > "];}
