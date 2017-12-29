@@ -1,0 +1,6 @@
+c:\users\user\documents\visual studio 2017\Projects\ServidorEDD\ServidorEDD\bin\ServidorEDD.dll.config
+c:\users\user\documents\visual studio 2017\Projects\ServidorEDD\ServidorEDD\bin\ServidorEDD.dll
+c:\users\user\documents\visual studio 2017\Projects\ServidorEDD\ServidorEDD\bin\ServidorEDD.pdb
+c:\users\user\documents\visual studio 2017\Projects\ServidorEDD\ServidorEDD\obj\Debug\ServidorEDD.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2017\Projects\ServidorEDD\ServidorEDD\obj\Debug\ServidorEDD.dll
+c:\users\user\documents\visual studio 2017\Projects\ServidorEDD\ServidorEDD\obj\Debug\ServidorEDD.pdb

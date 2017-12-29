@@ -1,0 +1,439 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5FCDDE9-A335-44AD-994D-FFD4072C05E5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClienteEDD</RootNamespace>
+    <AssemblyName>ClienteEDD</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrador.aspx" />
+    <Content Include="assets\css\animate.min.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\img\intro.jpg" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\common.js" />
+    <Content Include="assets\js\jquery.localScroll.min.js" />
+    <Content Include="assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jquery.scrollTo.min.js" />
+    <Content Include="assets\js\validate.js" />
+    <Content Include="assets\js\waypoints.min.js" />
+    <Content Include="bin\ClienteEDD.dll" />
+    <Content Include="bin\ClienteEDD.pdb" />
+    <Content Include="CargaMasiva.aspx" />
+    <Content Include="Configuracion.aspx" />
+    <Content Include="Consultas.aspx" />
+    <Content Include="CrearU.aspx" />
+    <Content Include="documentation-runcharity\clickme.html" />
+    <Content Include="documentation-runcharity\css\bootstrap-theme.css" />
+    <Content Include="documentation-runcharity\css\bootstrap-theme.min.css" />
+    <Content Include="documentation-runcharity\css\bootstrap.css" />
+    <Content Include="documentation-runcharity\css\bootstrap.min.css" />
+    <Content Include="documentation-runcharity\css\bootswatch\Amelia\bootstrap.min.css" />
+    <Content Include="documentation-runcharity\css\bootswatch\Cerulean\bootstrap.min.css" />
+    <Content Include="documentation-runcharity\css\bootswatch\Cosmo\bootstrap.min.css" />
+    <Content Include="documentation-runcharity\css\bootswatch\Cyborg\bootstrap.min.css" />
+    <Content Include="documentation-runcharity\css\bootswatch\Flatly\bootstrap.min.css" />
+    <Content Include="documentation-runcharity\css\bootswatch\Journal\bootstrap.min.css" />
+    <Content Include="documentation-runcharity\css\bootswatch\Readable\bootstrap.min.css" />
+    <Content Include="documentation-runcharity\css\bootswatch\Simplex\bootstrap.min.css" />
+    <Content Include="documentation-runcharity\css\bootswatch\Slate\bootstrap.min.css" />
+    <Content Include="documentation-runcharity\css\docs.css" />
+    <Content Include="documentation-runcharity\css\jquery.tocify.css" />
+    <Content Include="documentation-runcharity\css\jquery.ui.all.css" />
+    <Content Include="documentation-runcharity\css\prettify.css" />
+    <Content Include="documentation-runcharity\css\rainbowlines\theme.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\all-hallows-eve.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\blackboard.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\dreamweaver.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\espresso-libre.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\github.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\kimbie-dark.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\kimbie-light.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\monokai.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\obsidian.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\paraiso-dark.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\paraiso-light.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\pastie.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\rainbow.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\solarized-dark.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\solarized-light.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\sunburst.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\tomorrow-night.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\tricolore.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\twilight.css" />
+    <Content Include="documentation-runcharity\css\rainbow\themes\zenburnesque.css" />
+    <Content Include="documentation-runcharity\css\skin-yellow.css" />
+    <Content Include="documentation-runcharity\css\styles.css" />
+    <Content Include="documentation-runcharity\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="documentation-runcharity\img\glyphicons-halflings-white.png" />
+    <Content Include="documentation-runcharity\img\glyphicons-halflings.png" />
+    <Content Include="documentation-runcharity\img\jqueryUIEffects.png" />
+    <Content Include="documentation-runcharity\img\logo.png" />
+    <Content Include="documentation-runcharity\img\themeroller.png" />
+    <Content Include="documentation-runcharity\img\ui-bg_diagonals-thick_8_333333_40x40.png" />
+    <Content Include="documentation-runcharity\img\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="documentation-runcharity\img\ui-bg_glass_40_111111_1x400.png" />
+    <Content Include="documentation-runcharity\img\ui-bg_glass_55_1c1c1c_1x400.png" />
+    <Content Include="documentation-runcharity\img\ui-bg_highlight-hard_100_f9f9f9_1x100.png" />
+    <Content Include="documentation-runcharity\img\ui-bg_highlight-hard_40_aaaaaa_1x100.png" />
+    <Content Include="documentation-runcharity\img\ui-bg_highlight-soft_50_aaaaaa_1x100.png" />
+    <Content Include="documentation-runcharity\img\ui-bg_inset-hard_45_cd0a0a_1x100.png" />
+    <Content Include="documentation-runcharity\img\ui-bg_inset-hard_55_ffeb80_1x100.png" />
+    <Content Include="documentation-runcharity\img\ui-icons_222222_256x240.png" />
+    <Content Include="documentation-runcharity\img\ui-icons_4ca300_256x240.png" />
+    <Content Include="documentation-runcharity\img\ui-icons_bbbbbb_256x240.png" />
+    <Content Include="documentation-runcharity\img\ui-icons_ededed_256x240.png" />
+    <Content Include="documentation-runcharity\img\ui-icons_ffcf29_256x240.png" />
+    <Content Include="documentation-runcharity\img\ui-icons_ffffff_256x240.png" />
+    <Content Include="documentation-runcharity\img\widgetFactory.PNG" />
+    <Content Include="documentation-runcharity\js\base64.js" />
+    <Content Include="documentation-runcharity\js\bootstrap.js" />
+    <Content Include="documentation-runcharity\js\bootstrap.min.js" />
+    <Content Include="documentation-runcharity\js\DownloadBuilder.js" />
+    <Content Include="documentation-runcharity\js\jquery-ui.min.js" />
+    <Content Include="documentation-runcharity\js\jquery.min.js" />
+    <Content Include="documentation-runcharity\js\jquery.tocify.min.js" />
+    <Content Include="documentation-runcharity\js\jquery_UI_Old.js" />
+    <Content Include="documentation-runcharity\js\prettify.js" />
+    <Content Include="documentation-runcharity\js\rainbowlines\rainbow.linenumbers.js" />
+    <Content Include="documentation-runcharity\js\rainbowlines\rainbow.linenumbers.min.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\c.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\coffeescript.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\csharp.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\css.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\d.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\generic.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\go.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\haskell.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\html.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\java.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\javascript.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\lua.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\php.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\python.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\r.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\ruby.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\scheme.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\shell.js" />
+    <Content Include="documentation-runcharity\js\rainbow\language\smalltalk.js" />
+    <Content Include="documentation-runcharity\js\rainbow\rainbow.js" />
+    <Content Include="documentation-runcharity\js\rainbow\rainbow.min.js" />
+    <Content Include="images\demo\320x220.png" />
+    <Content Include="images\demo\avatar.png" />
+    <Content Include="images\demo\backgrounds\01.png" />
+    <Content Include="images\demo\backgrounds\index.html" />
+    <Content Include="images\demo\gallery\01.png" />
+    <Content Include="images\demo\gallery\index.html" />
+    <Content Include="images\demo\imgl.gif" />
+    <Content Include="images\demo\imgr.gif" />
+    <Content Include="images\demo\index.html" />
+    <Content Include="images\index.html" />
+    <Content Include="Inicio.aspx" />
+    <Content Include="layout\index.html" />
+    <Content Include="layout\scripts\index.html" />
+    <Content Include="layout\scripts\jquery.backtotop.js" />
+    <Content Include="layout\scripts\jquery.min.js" />
+    <Content Include="layout\scripts\jquery.mobilemenu.js" />
+    <Content Include="layout\scripts\jquery.placeholder.min.js" />
+    <Content Include="layout\styles\fontawesome-4.5.0.min.css" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.svg" />
+    <Content Include="layout\styles\fonts\index.html" />
+    <Content Include="layout\styles\framework.css" />
+    <Content Include="layout\styles\index.html" />
+    <Content Include="layout\styles\layout.css" />
+    <Content Include="license.txt" />
+    <Content Include="Login.aspx" />
+    <Content Include="obj\Debug\ClienteEDD.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ClienteEDD.dll" />
+    <Content Include="obj\Debug\ClienteEDD.pdb" />
+    <Content Include="pages\basic-grid.html" />
+    <Content Include="pages\full-width.html" />
+    <Content Include="pages\gallery.html" />
+    <Content Include="pages\index.html" />
+    <Content Include="pages\sidebar-left.html" />
+    <Content Include="pages\sidebar-right.html" />
+    <Content Include="Reportes.aspx" />
+    <Content Include="theme-runcharity\assets\css\animate.min.css" />
+    <Content Include="theme-runcharity\assets\css\bootstrap.min.css" />
+    <Content Include="theme-runcharity\assets\css\font-awesome.min.css" />
+    <Content Include="theme-runcharity\assets\css\style.css" />
+    <Content Include="theme-runcharity\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="theme-runcharity\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="theme-runcharity\assets\img\intro.jpg" />
+    <Content Include="theme-runcharity\assets\js\bootstrap.min.js" />
+    <Content Include="theme-runcharity\assets\js\common.js" />
+    <Content Include="theme-runcharity\assets\js\jquery.localScroll.min.js" />
+    <Content Include="theme-runcharity\assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="theme-runcharity\assets\js\jquery.min.js" />
+    <Content Include="theme-runcharity\assets\js\jquery.scrollTo.min.js" />
+    <Content Include="theme-runcharity\assets\js\validate.js" />
+    <Content Include="theme-runcharity\assets\js\waypoints.min.js" />
+    <Content Include="theme-runcharity\index.html" />
+    <Content Include="theme-runcharity\process.php" />
+    <Content Include="Pagina2.Master" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.eot" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.ttf" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.woff" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.woff2" />
+    <Content Include="layout\styles\fonts\FontAwesome.otf" />
+    <Content Include="Cliente.Master" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\localhost\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\localhost\WebService1.disco" />
+    <Content Include="UsuarioN.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CargaMasiva.aspx.cs">
+      <DependentUpon>CargaMasiva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CargaMasiva.aspx.designer.cs">
+      <DependentUpon>CargaMasiva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.Master.cs">
+      <DependentUpon>Cliente.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente.Master.designer.cs">
+      <DependentUpon>Cliente.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion.aspx.cs">
+      <DependentUpon>Configuracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuracion.aspx.designer.cs">
+      <DependentUpon>Configuracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas.aspx.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas.aspx.designer.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrearU.aspx.cs">
+      <DependentUpon>CrearU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearU.aspx.designer.cs">
+      <DependentUpon>CrearU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EnBlanco.Master.cs">
+      <DependentUpon>EnBlanco.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EnBlanco.Master.designer.cs">
+      <DependentUpon>EnBlanco.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.Master.cs">
+      <DependentUpon>Inicio.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.Master.designer.cs">
+      <DependentUpon>Inicio.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagina2.Master.cs">
+      <DependentUpon>Pagina2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagina2.Master.designer.cs">
+      <DependentUpon>Pagina2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.aspx.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes.aspx.designer.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioN.aspx.cs">
+      <DependentUpon>UsuarioN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsuarioN.aspx.designer.cs">
+      <DependentUpon>UsuarioN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\localhost\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Inicio.Master" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="bin\ClienteEDD.dll.config" />
+    <Content Include="documentation-runcharity\css\rainbowlines\theme.less" />
+    <Content Include="documentation-runcharity\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="documentation-runcharity\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="documentation-runcharity\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="obj\Debug\ClienteEDD.csprojResolveAssemblyReference.cache" />
+    <Content Include="obj\Debug\CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="theme-runcharity\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="theme-runcharity\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="theme-runcharity\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="theme-runcharity\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="theme-runcharity\assets\fonts\FontAwesome.otf" />
+    <Content Include="theme-runcharity\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="theme-runcharity\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="theme-runcharity\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="theme-runcharity\assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="EnBlanco.Master" />
+    <None Include="Web References\localhost\WebService1.wsdl" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:52644/WebService1.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\localhost\</RelPath>
+      <UpdateFromURL>http://localhost:52644/WebService1.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ClienteEDD_localhost_WebService1</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52413</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52413/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

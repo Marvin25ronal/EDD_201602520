@@ -1,0 +1,7 @@
+C:\Users\User\documents\visual studio 2017\Projects\ClienteEDD\ClienteEDD\bin\ClienteEDD.dll.config
+C:\Users\User\documents\visual studio 2017\Projects\ClienteEDD\ClienteEDD\bin\ClienteEDD.dll
+C:\Users\User\documents\visual studio 2017\Projects\ClienteEDD\ClienteEDD\bin\ClienteEDD.XmlSerializers.dll
+C:\Users\User\documents\visual studio 2017\Projects\ClienteEDD\ClienteEDD\bin\ClienteEDD.pdb
+C:\Users\User\documents\visual studio 2017\Projects\ClienteEDD\ClienteEDD\obj\Release\ClienteEDD.dll
+C:\Users\User\documents\visual studio 2017\Projects\ClienteEDD\ClienteEDD\obj\Release\ClienteEDD.pdb
+C:\Users\User\documents\visual studio 2017\Projects\ClienteEDD\ClienteEDD\obj\Release\ClienteEDD.XmlSerializers.dll
