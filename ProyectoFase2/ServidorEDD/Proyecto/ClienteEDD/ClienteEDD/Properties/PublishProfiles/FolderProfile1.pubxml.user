@@ -1,0 +1,623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_NewBackgroundProfile>True</_NewBackgroundProfile>
+    <_PublishTargetUrl>C:\Users\User\Desktop\ServidorEDD\Cliente</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Administrador.aspx">
+      <publishTime>12/28/2017 14:31:08</publishTime>
+    </File>
+    <File Include="assets/css/animate.min.css">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/css/bootstrap.min.css">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/css/font-awesome.min.css">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/css/style.css">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/fonts/fontawesome-webfont.eot">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/fonts/fontawesome-webfont.svg">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/fonts/fontawesome-webfont.ttf">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/fonts/fontawesome-webfont.woff">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/fonts/fontawesome-webfont.woff2">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/fonts/FontAwesome.otf">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/img/intro.jpg">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap.min.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/js/common.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/js/jquery.localScroll.min.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/js/jquery.magnific-popup.min.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/js/jquery.min.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/js/jquery.scrollTo.min.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/js/validate.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="assets/js/waypoints.min.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="bin/ClienteEDD.dll">
+      <publishTime>01/08/2018 23:38:44</publishTime>
+    </File>
+    <File Include="bin/ClienteEDD.dll.config">
+      <publishTime>01/08/2018 23:01:19</publishTime>
+    </File>
+    <File Include="bin/ClienteEDD.pdb">
+      <publishTime>01/08/2018 23:38:44</publishTime>
+    </File>
+    <File Include="bin/ClienteEDD.XmlSerializers.dll">
+      <publishTime>01/08/2018 23:38:45</publishTime>
+    </File>
+    <File Include="CargaMasiva.aspx">
+      <publishTime>01/06/2018 20:45:14</publishTime>
+    </File>
+    <File Include="Cliente.Master">
+      <publishTime>01/08/2018 23:29:16</publishTime>
+    </File>
+    <File Include="Configuracion.aspx">
+      <publishTime>12/27/2017 21:35:06</publishTime>
+    </File>
+    <File Include="Consultas.aspx">
+      <publishTime>01/08/2018 18:41:39</publishTime>
+    </File>
+    <File Include="Contactos.aspx">
+      <publishTime>01/06/2018 19:41:42</publishTime>
+    </File>
+    <File Include="CrearU.aspx">
+      <publishTime>01/07/2018 20:15:09</publishTime>
+    </File>
+    <File Include="documentation-runcharity/clickme.html">
+      <publishTime>02/23/2016 06:39:50</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/bootstrap-theme.css">
+      <publishTime>02/23/2016 06:39:50</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/bootstrap-theme.min.css">
+      <publishTime>02/23/2016 06:39:50</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/bootstrap.css">
+      <publishTime>02/23/2016 06:39:50</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/bootstrap.min.css">
+      <publishTime>02/23/2016 06:39:50</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/bootswatch/Amelia/bootstrap.min.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/bootswatch/Cerulean/bootstrap.min.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/bootswatch/Cosmo/bootstrap.min.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/bootswatch/Cyborg/bootstrap.min.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/bootswatch/Flatly/bootstrap.min.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/bootswatch/Journal/bootstrap.min.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/bootswatch/Readable/bootstrap.min.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/bootswatch/Simplex/bootstrap.min.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/bootswatch/Slate/bootstrap.min.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/docs.css">
+      <publishTime>02/23/2016 06:39:50</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/jquery.tocify.css">
+      <publishTime>02/23/2016 06:39:50</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/jquery.ui.all.css">
+      <publishTime>02/23/2016 06:39:50</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/prettify.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/all-hallows-eve.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/blackboard.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/dreamweaver.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/espresso-libre.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/github.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/kimbie-dark.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/kimbie-light.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/monokai.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/obsidian.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/paraiso-dark.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/paraiso-light.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/pastie.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/rainbow.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/solarized-dark.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/solarized-light.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/sunburst.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/tomorrow-night.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/tricolore.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/twilight.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbow/themes/zenburnesque.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbowlines/theme.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/rainbowlines/theme.less">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/skin-yellow.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/css/styles.css">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/glyphicons-halflings-white.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/glyphicons-halflings.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/jqueryUIEffects.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/logo.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/themeroller.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-bg_diagonals-thick_8_333333_40x40.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-bg_flat_65_ffffff_40x100.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-bg_glass_40_111111_1x400.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-bg_glass_55_1c1c1c_1x400.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-bg_highlight-hard_100_f9f9f9_1x100.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-bg_highlight-hard_40_aaaaaa_1x100.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-bg_highlight-soft_50_aaaaaa_1x100.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-bg_inset-hard_45_cd0a0a_1x100.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-bg_inset-hard_55_ffeb80_1x100.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-icons_222222_256x240.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-icons_4ca300_256x240.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-icons_bbbbbb_256x240.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-icons_ededed_256x240.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-icons_ffcf29_256x240.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/ui-icons_ffffff_256x240.png">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/img/widgetFactory.PNG">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/base64.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/bootstrap.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/bootstrap.min.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/DownloadBuilder.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/jquery-ui.min.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/jquery.min.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/jquery.tocify.min.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/jquery_UI_Old.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/prettify.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/c.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/coffeescript.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/csharp.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/css.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/d.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/generic.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/go.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/haskell.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/html.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/java.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/javascript.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/lua.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/php.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/python.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/r.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/ruby.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/scheme.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/shell.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/language/smalltalk.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/rainbow.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbow/rainbow.min.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbowlines/rainbow.linenumbers.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="documentation-runcharity/js/rainbowlines/rainbow.linenumbers.min.js">
+      <publishTime>02/23/2016 06:39:52</publishTime>
+    </File>
+    <File Include="EnBlanco.Master">
+      <publishTime>12/25/2017 20:34:15</publishTime>
+    </File>
+    <File Include="images/demo/320x220.png">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="images/demo/avatar.png">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="images/demo/backgrounds/01.png">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="images/demo/backgrounds/index.html">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="images/demo/gallery/01.png">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="images/demo/gallery/index.html">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="images/demo/imgl.gif">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="images/demo/imgr.gif">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="images/demo/index.html">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="images/index.html">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="Inicio.aspx">
+      <publishTime>12/25/2017 19:33:48</publishTime>
+    </File>
+    <File Include="Inicio.Master">
+      <publishTime>12/28/2017 16:02:03</publishTime>
+    </File>
+    <File Include="layout/index.html">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="layout/scripts/index.html">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="layout/scripts/jquery.backtotop.js">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="layout/scripts/jquery.min.js">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="layout/scripts/jquery.mobilemenu.js">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="layout/scripts/jquery.placeholder.min.js">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="layout/styles/fontawesome-4.5.0.min.css">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="layout/styles/fonts/fontawesome-webfont.eot">
+      <publishTime>12/25/2017 22:39:55</publishTime>
+    </File>
+    <File Include="layout/styles/fonts/fontawesome-webfont.svg">
+      <publishTime>12/25/2017 22:39:55</publishTime>
+    </File>
+    <File Include="layout/styles/fonts/fontawesome-webfont.ttf">
+      <publishTime>12/25/2017 22:39:55</publishTime>
+    </File>
+    <File Include="layout/styles/fonts/fontawesome-webfont.woff">
+      <publishTime>12/25/2017 22:39:55</publishTime>
+    </File>
+    <File Include="layout/styles/fonts/fontawesome-webfont.woff2">
+      <publishTime>12/25/2017 22:39:55</publishTime>
+    </File>
+    <File Include="layout/styles/fonts/FontAwesome.otf">
+      <publishTime>12/25/2017 22:39:55</publishTime>
+    </File>
+    <File Include="layout/styles/fonts/index.html">
+      <publishTime>12/25/2017 22:39:55</publishTime>
+    </File>
+    <File Include="layout/styles/framework.css">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="layout/styles/index.html">
+      <publishTime>12/25/2017 22:39:54</publishTime>
+    </File>
+    <File Include="layout/styles/layout.css">
+      <publishTime>12/25/2017 22:39:55</publishTime>
+    </File>
+    <File Include="license.txt">
+      <publishTime>02/23/2016 06:28:58</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>12/25/2017 22:46:09</publishTime>
+    </File>
+    <File Include="pages/basic-grid.html">
+      <publishTime>12/25/2017 22:39:55</publishTime>
+    </File>
+    <File Include="pages/full-width.html">
+      <publishTime>12/25/2017 22:39:55</publishTime>
+    </File>
+    <File Include="pages/gallery.html">
+      <publishTime>12/25/2017 22:39:55</publishTime>
+    </File>
+    <File Include="pages/index.html">
+      <publishTime>12/25/2017 22:39:55</publishTime>
+    </File>
+    <File Include="pages/sidebar-left.html">
+      <publishTime>12/25/2017 22:39:55</publishTime>
+    </File>
+    <File Include="pages/sidebar-right.html">
+      <publishTime>12/25/2017 22:39:55</publishTime>
+    </File>
+    <File Include="Pagina2.Master">
+      <publishTime>01/08/2018 23:34:51</publishTime>
+    </File>
+    <File Include="Reportes.aspx">
+      <publishTime>01/07/2018 22:58:23</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/css/animate.min.css">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/css/bootstrap.min.css">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/css/font-awesome.min.css">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/css/style.css">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/fonts/fontawesome-webfont.eot">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/fonts/fontawesome-webfont.svg">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/fonts/fontawesome-webfont.ttf">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/fonts/fontawesome-webfont.woff">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/fonts/fontawesome-webfont.woff2">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/fonts/FontAwesome.otf">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/img/intro.jpg">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/js/bootstrap.min.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/js/common.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/js/jquery.localScroll.min.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/js/jquery.magnific-popup.min.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/js/jquery.min.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/js/jquery.scrollTo.min.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/js/validate.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/assets/js/waypoints.min.js">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="theme-runcharity/index.html">
+      <publishTime>02/23/2016 06:41:08</publishTime>
+    </File>
+    <File Include="theme-runcharity/process.php">
+      <publishTime>02/23/2016 06:39:54</publishTime>
+    </File>
+    <File Include="UsuarioN.aspx">
+      <publishTime>01/08/2018 22:11:53</publishTime>
+    </File>
+    <File Include="Web References/localhost/Reference.map">
+      <publishTime>01/08/2018 23:01:10</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/08/2018 23:38:47</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

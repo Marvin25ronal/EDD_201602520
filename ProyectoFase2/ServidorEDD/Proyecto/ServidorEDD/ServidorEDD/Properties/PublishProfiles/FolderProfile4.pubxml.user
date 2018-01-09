@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_NewBackgroundProfile>False</_NewBackgroundProfile>
+    <_PublishTargetUrl>C:\Users\User\Desktop\ServidorEDD\Servidor</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ServidorEDD.dll">
+      <publishTime>01/08/2018 23:18:58</publishTime>
+    </File>
+    <File Include="bin/ServidorEDD.dll.config">
+      <publishTime>12/28/2017 18:21:07</publishTime>
+    </File>
+    <File Include="bin/ServidorEDD.pdb">
+      <publishTime>01/08/2018 23:18:58</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/FolderProfile.pubxml.user">
+      <publishTime>12/28/2017 18:25:57</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/FolderProfile1.pubxml.user">
+      <publishTime>01/08/2018 22:40:36</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/08/2018 23:18:58</publishTime>
+    </File>
+    <File Include="WebService1.asmx">
+      <publishTime>12/25/2017 20:59:15</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
